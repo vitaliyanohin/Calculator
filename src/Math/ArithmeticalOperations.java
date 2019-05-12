@@ -12,15 +12,15 @@ public class ArithmeticalOperations {
     this.converter = new Converter();
   }
   public int arithmeticOperationsToArabicNumbers(int first, String operation, int second) {
-    return arithmeticalOperations( first, operation, second );
+    return arithmeticalOperations(first, operation, second);
   }
 
   public String arithmeticOperationsToRomanNumbers(String firstNumber, String operation, String secondNumber) {
-    int first = converter.romanToArab( firstNumber );
-    int second = converter.romanToArab( secondNumber );
-    int result = arithmeticalOperations( first, operation, second );
+    int first = converter.romanToArab(firstNumber);
+    int second = converter.romanToArab(secondNumber);
+    int result = arithmeticalOperations(first, operation, second);
 
-    return converter.toRoman( result );
+    return converter.toRoman(result);
   }
 
   private int arithmeticalOperations(int first, String operation, int second) {

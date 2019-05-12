@@ -21,7 +21,7 @@ public class ScannerHelper {
 
       if (scanner.hasNextInt()) {
         int second = scanner.nextInt();
-        System.out.println( arithmeticalOperations.arithmeticOperationsToArabicNumbers(first, operation, second ));
+        System.out.println(arithmeticalOperations.arithmeticOperationsToArabicNumbers(first, operation, second));
       } else {
         System.out.println("VETO!");
         scanner.nextLine();
