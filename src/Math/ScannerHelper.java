@@ -8,11 +8,10 @@ public class ScannerHelper {
   private final ArithmeticalOperations arithmeticalOperations;
   private String operation;
 
-  public ScannerHelper(Scanner scanner){
+  public ScannerHelper(Scanner scanner) {
     this.scanner = scanner;
     arithmeticalOperations = new ArithmeticalOperations();
   }
-
 
   public void scan() {
 
@@ -22,12 +21,12 @@ public class ScannerHelper {
 
       if (scanner.hasNextInt()) {
         int second = scanner.nextInt();
-        System.out.println( arithmeticalOperations.arithmeticOperationsToArabicNumbers(first, operation, second));
-      }else {
+        System.out.println( arithmeticalOperations.arithmeticOperationsToArabicNumbers(first, operation, second ));
+      } else {
         System.out.println("VETO!");
         scanner.nextLine();
-
-      } } else {
+      }
+    } else {
       String first = scanner.next();
       operation = scanner.next();
 
@@ -36,7 +35,8 @@ public class ScannerHelper {
         scanner.nextLine();
       } else {
         String second = scanner.next();
-        System.out.println( arithmeticalOperations.arithmeticOperationsToRomanNumbers(first, operation, second) + "  Dictum factum!");
+        System.out.println(arithmeticalOperations
+                .arithmeticOperationsToRomanNumbers(first, operation, second) + "  Dictum factum!");
       }
     }
   }

@@ -24,20 +24,23 @@ public class Converter {
 
  }
 
-   String toRoman(int number) {
+  public String toRoman(int number) {
     int l =  map.floorKey(number);
+
     if (number == l) {
       return map.get(number);
     }
+
     return map.get(l) + toRoman(number-l);
   }
 
-   int romanToArab(String romanNumber) {
-    for (int i = 1; i <= 1000 ; i++) {
-         if (toRoman(i).equals(romanNumber)) {
+  public int romanToArab(String romanNumber) {
+      for (int i = 1; i <= 1000 ; i++) {
+        if (toRoman(i).equals(romanNumber)) {
          return i;
          }
-    }
-   return 0;
+      }
+
+      return 0;
   }
 }
