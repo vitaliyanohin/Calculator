@@ -44,12 +44,10 @@ public class ArithmeticalOperations {
         } return first + second;
 
       case "/":
-        if (second == 0 || (first/second) <= 0 ) throw new OperationToZeroException("Division by zero or result zero or below zero");
+        if (second == 0 || (first/second) <= 0) throw new OperationToZeroException("Division by zero or result zero or below zero");
 
         return first / second;
         default: throw new NoFoundOperationException();
-
     }
   }
-
 }

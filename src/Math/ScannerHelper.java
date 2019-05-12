@@ -16,13 +16,13 @@ public class ScannerHelper {
 
   public void scan() {
 
-    if (scanner.hasNextInt() ) {
+    if (scanner.hasNextInt()) {
       int first = scanner.nextInt();
       operation = scanner.next();
 
       if (scanner.hasNextInt()) {
         int second = scanner.nextInt();
-        System.out.println( arithmeticalOperations.arithmeticOperationsToArabicNumbers( first, operation, second ));
+        System.out.println( arithmeticalOperations.arithmeticOperationsToArabicNumbers(first, operation, second));
       }else {
         System.out.println("VETO!");
         scanner.nextLine();
@@ -36,7 +36,7 @@ public class ScannerHelper {
         scanner.nextLine();
       } else {
         String second = scanner.next();
-        System.out.println( arithmeticalOperations.arithmeticOperationsToRomanNumbers( first, operation, second ) + "  Dictum factum!");
+        System.out.println( arithmeticalOperations.arithmeticOperationsToRomanNumbers(first, operation, second) + "  Dictum factum!");
       }
     }
   }

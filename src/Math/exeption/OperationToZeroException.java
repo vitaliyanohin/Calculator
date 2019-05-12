@@ -4,6 +4,6 @@ public class OperationToZeroException extends RuntimeException {
 
 
   public OperationToZeroException(String message) {
-    super( message );
+    super(message);
   }
 }
